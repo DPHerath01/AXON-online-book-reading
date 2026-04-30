@@ -2,7 +2,6 @@ generator client {
   provider = "prisma-client-js"
 }
 
-// මෙන්න මේ කොටස විතරක් වෙනස් කරන්න
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")

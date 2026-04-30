@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+:root {
+  --background: #F8EBD7;
+  --foreground: #5B3B1F;
+  --accent: #D1B07B;
+}
+
+[data-theme="newspaper-brown"] {
+  --background: #DBC09E;
+  --foreground: #2B1C14;
+  --accent: #A3CCBE;
+}
+
+[data-theme="vintage-lace"] {
+  --background: #E6DBC9;
+  --foreground: #5563A2;
+  --accent: #0DAA8E;
+}
+
+[data-theme="rare-jade"] {
+  --background: #A3CCBE;
+  --foreground: #2B1C14;
+  --accent: #8399A8;
+}
+
+[data-theme="solarized-dark"] {
+  --background: #073642;
+  --foreground: #839496;
+  --accent: #268BD2;
+}
+
+[data-theme="parchment-gold"] {
+  --background: #F8EBD7;
+  --foreground: #5B3B1F;
+  --accent: #D1B07B;
+}
+
+[data-theme="dark"] {
+  --background: #073642;
+  --foreground: #839496;
+  --accent: #268BD2;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.ambient-glow {
+  box-shadow: 0 0 50px 10px var(--accent);
+  filter: blur(2px);
+  opacity: 0.5;
+}
